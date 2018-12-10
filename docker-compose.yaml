@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  node:
+    image: node:10.14.1
+    working_dir: /regoscript
+    volumes:
+      - ./:/regoscript

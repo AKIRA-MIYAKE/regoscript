@@ -1,0 +1,1 @@
+{"version":3,"file":"parser.d.ts","sourceRoot":"","sources":["../../src/ast/parser.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,cAAc,CAAA;AAOvC,MAAM,CAAC,OAAO,OAAO,MAAM;IACzB,MAAM,MAA4D;IAElE,IAAI,CAAC,KAAK,EAAE,MAAM;IAQlB,KAAK,IAAI,QAAQ;CAKlB"}

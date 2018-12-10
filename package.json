@@ -1,0 +1,38 @@
+{
+  "name": "regoscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && npm run nearley && cp ./src/ast/grammar.js ./dist/ast/grammar.js",
+    "nearley": "nearleyc ./src/ast/rego.ne -o ./src/ast/grammar.js",
+    "lint": "tslint -p ./tsconfig.json --fix \"./src/**/*.ts\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKIRA-MIYAKE/regoscript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AKIRA-MIYAKE/regoscript/issues"
+  },
+  "homepage": "https://github.com/AKIRA-MIYAKE/regoscript#readme",
+  "dependencies": {
+    "datascript-mori": "^0.17.0",
+    "nearley": "^2.15.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2"
+  }
+}
